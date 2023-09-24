@@ -11,7 +11,9 @@ public class Main {
                 "Дата: yyy-MM-dd, Час: HH:mm:ss"
         ));
         ZoneId zone = ZonedDateTime.now().getOffset();
+        String zone2 = String.valueOf(ZonedDateTime.now(ZoneId.of("+1")));
         System.out.println(time);
         System.out.println(zone);
+        System.out.println(zone2);
     }
 }
